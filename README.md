@@ -1,5 +1,7 @@
 # lint-gost-tex
 
+[![status-badge](https://woodpecker.dev.nachert.art/api/badges/9/status.svg)](https://woodpecker.dev.nachert.art/repos/9)
+
 Линтер LaTeX‑документов под требования ГОСТ: проверяет оформление ссылок, списков,
 иллюстраций, запрещённые сокращения, нестандартные символы и орфографию.
 
