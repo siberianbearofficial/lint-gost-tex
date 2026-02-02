@@ -1,0 +1,173 @@
+[document]
+root = "main.tex"
+exclude = []
+
+[rules.images]
+required_width = "0.9\\textwidth"
+
+[rules.refs]
+commands = ["ref", "eqref", "autoref", "pageref", "cref", "Cref"]
+
+[rules.links]
+commands = [
+  "ref",
+  "eqref",
+  "autoref",
+  "pageref",
+  "cref",
+  "Cref",
+  "cite",
+  "citep",
+  "citet",
+  "citealp",
+  "citeauthor",
+  "citeyear",
+  "citeyearpar",
+  "url",
+  "href",
+  "hyperref",
+]
+
+[rules.styles]
+commands = ["underline", "uline", "ul", "textit", "textsl", "emph", "em", "itshape", "it"]
+
+[rules.lists]
+allowed_envs = ["itemize", "enumerate"]
+list_envs = ["itemize", "enumerate", "description", "list"]
+disallow_begin_optional = true
+disallow_item_optional = true
+
+[rules.captions]
+commands = ["caption", "captionof"]
+forbid_trailing = [".", ",", ";", ":", "!", "?"]
+
+[rules.illustrations]
+envs = ["figure", "table", "figure*", "table*"]
+ref_commands = ["ref", "autoref", "cref", "Cref", "pageref", "eqref"]
+
+[rules.abbrev]
+banned_words = [
+  "\u0441\u043c",
+  "\u0440\u0438\u0441",
+  "\u0442\u0430\u0431\u043b",
+  "\u0441\u0442\u0440",
+  "\u0433\u043b",
+  "\u0440\u0430\u0437\u0434",
+  "\u043f\u0440\u0438\u043b",
+]
+banned_patterns = [
+  "\\b\\u0442\\.\\s*\\u0434\\.",
+  "\\b\\u0442\\.\\s*\\u043f\\.",
+  "\\b\\u0438\\s+\\u0442\\.\\s*\\u0434\\.",
+  "\\b\\u0438\\s+\\u0442\\.\\s*\\u043f\\.",
+  "\\b\\u0442\\.\\s*\\u0435\\.",
+  "\\b\\u0442\\.\\s*\\u043a\\.",
+  "\\b\\u0442\\.\\s*\\u043e\\.",
+  "\\b\\u0438\\s+\\u0434\\u0440\\.",
+]
+allow_words = []
+skip_commands = [
+  "include",
+  "input",
+  "cite",
+  "citep",
+  "citet",
+  "citealp",
+  "citeauthor",
+  "citeyear",
+  "citeyearpar",
+  "ref",
+  "eqref",
+  "autoref",
+  "pageref",
+  "cref",
+  "Cref",
+  "label",
+  "url",
+  "href",
+  "hyperref",
+  "includegraphics",
+  "includepdf",
+  "graphicspath",
+]
+two_arg_commands = ["href", "hyperref"]
+
+[rules.unicode]
+allowed_extra = ["\u2116", "\u00ab", "\u00bb"]
+
+[rules.list_items]
+skip_commands = [
+  "include",
+  "input",
+  "cite",
+  "citep",
+  "citet",
+  "citealp",
+  "citeauthor",
+  "citeyear",
+  "citeyearpar",
+  "ref",
+  "eqref",
+  "autoref",
+  "pageref",
+  "cref",
+  "Cref",
+  "label",
+  "url",
+  "href",
+  "hyperref",
+  "includegraphics",
+  "includepdf",
+  "graphicspath",
+]
+two_arg_commands = ["href", "hyperref"]
+sentence_endings = [".", "!", "?"]
+last_end = "."
+non_last_end = ";"
+
+[spellcheck]
+custom_dict = "dictionaries/custom.txt"
+extra_ru_dicts = ["dictionaries/ru.txt"]
+extra_en_dicts = []
+ignore_envs = [
+  "lstlisting",
+  "verbatim",
+  "verbatim*",
+  "minted",
+  "tikzpicture",
+  "equation",
+  "equation*",
+  "align",
+  "align*",
+  "gather",
+  "gather*",
+  "multline",
+  "multline*",
+]
+skip_commands = [
+  "include",
+  "input",
+  "cite",
+  "citep",
+  "citet",
+  "citealp",
+  "citeauthor",
+  "citeyear",
+  "citeyearpar",
+  "ref",
+  "eqref",
+  "autoref",
+  "pageref",
+  "cref",
+  "Cref",
+  "label",
+  "url",
+  "href",
+  "hyperref",
+  "includegraphics",
+  "includepdf",
+  "graphicspath",
+]
+keep_commands = ["textbf", "textrm", "textsf", "texttt", "textsc"]
+min_word_length = 2
+ignore_uppercase_acronyms = true

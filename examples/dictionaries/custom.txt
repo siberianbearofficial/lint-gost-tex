@@ -1,0 +1,1 @@
+# Add project-specific allowed words here, one per line.
